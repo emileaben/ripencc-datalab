@@ -34,15 +34,20 @@ atlas-disconnects-grouped-by-country
 # Installation of Data Analysis Tools
 
 ## Anaconda python lib
+```
 wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
 chmod +x Anaconda3-5.0.1-Linux-x86_64.sh
 ./Anaconda3-5.0.1-Linux-x86_64.sh
+```
 
 ## RIPE Atlas Tools
+```
 sudo yum install epel-release
 sudo yum install gcc libffi-devel openssl-devel
 sudo yum install python-virtualenv python-pip
 pip install ripe.atlas.tools
-
+```
 ## RIPE Community Contributions
+```
 git clone https://github.com/RIPE-Atlas-Community/ripe-atlas-community-contrib.git
+```
