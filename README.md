@@ -31,9 +31,24 @@ atlas-disconnects-grouped-by-country
 
 (TODO create a data download script for all this)
 
+# Virtual Machine Specification
+```
+$ hostnamectl 
+   Static hostname: localhost.localdomain
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: ca0f29a5720c46358e97046257fa3794
+           Boot ID: a0ae0d45f6ed4de0a5400ac5e5b7cacd
+    Virtualization: kvm
+  Operating System: CentOS Linux 7 (Core)
+       CPE OS Name: cpe:/o:centos:centos:7
+            Kernel: Linux 3.10.0-693.el7.x86_64
+      Architecture: x86-64
+```
+
 # Installation of Data Analysis Tools
 
-## Anaconda python lib
+## Anaconda Python
 ```
 wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
 chmod +x Anaconda3-5.0.1-Linux-x86_64.sh
