@@ -21,13 +21,13 @@ ris-streaming-example
 
 # data needed
 
-a weeks worth of RIPE Atlas results from: https://ftp.ripe.net/ripe/atlas/data/
-atlas ftp metadata
-ixp-country-jedi results : http://sg-pub.ripe.net/emile/ixp-country-jedi/ixp-country-jedi-confs.tgz
-OpenIPMap https://ftp.ripe.net/ripe/openipmap/   ftp://ftp.ripe.net/ripe/openipmap/geolocations-latest
-RIS : 
-ripestat  ?? ask CT
-atlas-disconnects-grouped-by-country 
+ - a weeks worth of RIPE Atlas results from: https://ftp.ripe.net/ripe/atlas/data/
+ - atlas ftp metadata
+ - ixp-country-jedi results : http://sg-pub.ripe.net/emile/ixp-country-jedi/ixp-country-jedi-confs.tgz
+ - OpenIPMap https://ftp.ripe.net/ripe/openipmap/   ftp://ftp.ripe.net/ripe/openipmap/geolocations-latest
+ - RIS:
+  - ripestat  ?? ask CT
+  - atlas-disconnects-grouped-by-country
 
 (TODO create a data download script for all this)
 
