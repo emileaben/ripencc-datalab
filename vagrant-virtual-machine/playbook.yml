@@ -1,0 +1,41 @@
+---
+- hosts: all
+  sudo: true
+  tasks:
+   - name: Update certificates
+     yum: name="ca-certificates" state=latest
+   - name: install packages via yum
+     yum: name={{ item }} state=present
+     with_items:
+          - epel-release
+          - python
+          - python-setuptools
+          - python-devel
+          - git
+          - gnuplot
+          - jq
+          - nginx
+          - zip
+          - unzip
+          - gcc
+          - autoconf
+          - automake
+   - name: install python packages
+     easy_install: name={{ item }}
+     with_items:
+          - pip
+          - virtualenv
+   - name: "PIP install packages."
+     pip: name={{ item }}
+     with_items:
+          - ripe-atlas-cousteau
+          - ripe-atlas-sagan
+          - ripe-atlas-tools
+   - name: "download bgpdump"
+     get_url: url="https://bitbucket.org/ripencc/bgpdump/get/94a0e724b335.zip" dest=/var/tmp mode=0755
+   - name: "bgpdump-copy-install"
+     copy: src=scripts/install_bgpdump.sh dest=/var/tmp/install_bgpdump.sh mode=0755
+   - name: "bgpdump-exec-install"
+     shell: /var/tmp/install_bgpdump.sh >> /var/tmp/bgpdump_install_log
+     args:
+       executable: /usr/bin/bash
