@@ -114,3 +114,12 @@ make check
 sudo make install
 sudo ldconfig
 ```
+
+Install PyBGPStream (python2.7 only):
+```
+curl -O http://bgpstream.caida.org/bundles/caidabgpstreamwebhomepage/dists/pybgpstream-1.1.0.tar.gz
+tar zxf pybgpstream-1.1.0.tar.gz
+cd pybgpstream-1.1.0
+python2.7 setup.py build_ext
+sudo python2.7 setup.py install
+```
