@@ -121,7 +121,7 @@ function net_tests
 		curl -s4 'https://ipv4-test.ripe.net/ok.png' > /dev/null
 		if [ $? -eq 0 ]
 		then
-		echo " HTTPS fetch of larger object works"
+			echo " HTTPS fetch of larger object works"
 		fi
 	fi
 }
