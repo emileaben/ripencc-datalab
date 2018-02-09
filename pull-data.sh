@@ -249,7 +249,6 @@ d=`$DATECMD --date "yesterday" +"%Y-%m-%d"`
 
 while getopts "d:no:h" opt
 do
-
 	case $opt in
 	d)
 		d="$OPTARG"
