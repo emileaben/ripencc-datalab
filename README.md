@@ -55,11 +55,16 @@ chmod +x Anaconda3-5.0.1-Linux-x86_64.sh
 ./Anaconda3-5.0.1-Linux-x86_64.sh
 ```
 
-## RIPE Atlas Tools
-```
+## RIPE Atlas Tools and Dependencies
+```          
 sudo yum install epel-release
+sudo yum install python-setuptools python-devel
+sudo yum install git gnuplot jq nginx
+sudo yum install zip unzip 
+sudo yum install gcc autoconf automake
 sudo yum install gcc libffi-devel openssl-devel
 sudo yum install python-virtualenv python-pip
+pip install virtualenv
 pip install ripe.atlas.tools
 ```
 ## RIPE Community Contributions
