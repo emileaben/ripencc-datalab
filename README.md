@@ -71,6 +71,9 @@ pip install ripe.atlas.tools
 ## RIPE Community Contributions
 ```
 git clone https://github.com/RIPE-Atlas-Community/ripe-atlas-community-contrib.git
+git clone https://github.com/emileaben/ixp-country-jedi
+git clone https://github.com/sdstrowes/atlas-scripts
+git clone https://github.com/emileaben/resource-gnuplotter
 ```
 
 ## BGP Tools
