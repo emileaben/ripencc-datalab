@@ -76,6 +76,12 @@ git clone https://github.com/sdstrowes/atlas-scripts
 git clone https://github.com/emileaben/resource-gnuplotter
 ```
 
+IXP Country Jedi requirements: 
+```
+cd ixp-country-jedi/
+pip install -r requirements.txt
+```
+
 ## BGP Tools
 ### libBGPdump
 ```
