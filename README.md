@@ -48,11 +48,19 @@ $ hostnamectl
 
 # Installation of Data Analysis Tools
 
-## Anaconda Python
+## Python Tools
+
+Anaconda distribution:
 ```
 wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
 chmod +x Anaconda3-5.0.1-Linux-x86_64.sh
 ./Anaconda3-5.0.1-Linux-x86_64.sh
+```
+
+Visualization:
+```
+pip install mplleaflet
+pip install folium
 ```
 
 ## RIPE Atlas Tools and Dependencies
