@@ -140,3 +140,7 @@ cd pybgpstream-1.1.0
 python2.7 setup.py build_ext
 sudo python2.7 setup.py install
 ```
+
+# Collaboration Server Setup With Jupyter Notebook
+
+This allows people to work together on data processing and sharing.

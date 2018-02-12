@@ -1,0 +1,43 @@
+---
+- hosts: all
+  remote_user: <REPLACE-WITH-OPERATIONAL-USER>
+  tasks:
+  - name: Install EPEL release
+    become: yes
+    yum: name=epel-release
+  - name: Install htop
+    become: yes
+    yum: name=htop
+  - name: Install yum-utils
+    become: yes
+    yum: name=yum-utils
+  - name: Install screen
+    become: yes
+    yum: name=screen
+  - name: Install screen
+    become: yes
+    yum: name=htop
+  - name: Group installation of development tools
+    become: yes
+    command: yum -y groupinstall development
+  - name: Install Python3
+    become: yes
+    yum: name=python34
+  - name: Install Python3 Devel
+    become: yes
+    yum: name=python34-devel
+  - name: Install Pip python34
+    become: yes
+    yum: name=python34-pip
+  - name: Install Python modules
+    become: yes
+    command: pip3 install jupyter numpy pandas requests seaborn ipython
+  - name: Create base directory
+    become: yes
+    file: state=directory path=/ipv6hack owner=<REPLACE-WITH-OPERATIONAL-USER> mode=0755
+  - name: Create config directory
+    become: yes
+    file: state=directory path=/ipv6hack/conf owner=<REPLACE-WITH-OPERATIONAL-USER> mode=0755
+  - name: Create code directory
+    become: yes
+    file: state=directory path=/ipv6hack/code owner=<REPLACE-WITH-OPERATIONAL-USER> mode=0755

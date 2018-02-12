@@ -1,0 +1,16 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+  - name: Install SELinux Python bindings
+    yum:
+      name: libselinux-python
+  - name: Set SELinux to permissive mode
+    selinux: state=disabled
+  - name: create user "<REPLACE-WITH-USERNAME>"
+    user: name=<REPLACE-WITH-USERNAME> groups=wheel password=<REPLACE-WITH-HASHED-PASSWORD>
+  - name: add user to authorized_keys
+    authorized_key:
+      user: <REPLACE-WITH-USERNAME>
+      state: present
+      key: "{{ lookup('file', '<REPLACE-WITH-USER-DIRECTORY>/.ssh/id_rsa.pub') }}"
