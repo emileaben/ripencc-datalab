@@ -21,6 +21,7 @@ ris-streaming-example
 
 # data needed
 
+a wish-list:
  - a weeks worth of RIPE Atlas results from: https://ftp.ripe.net/ripe/atlas/data/
  - atlas ftp metadata
  - ixp-country-jedi results : http://sg-pub.ripe.net/emile/ixp-country-jedi/ixp-country-jedi-confs.tgz
@@ -28,8 +29,8 @@ ris-streaming-example
  - RIS:
   - ripestat  ?? ask CT
   - atlas-disconnects-grouped-by-country
-
-(TODO create a data download script for all this)
+  
+ Note that the downloading of this data takes quite a while, there is a script *pull-data.sh* that pulls it. for a data-lab it is advisable to take a physical disk to places with low-bandwidth.
 
 # Virtual Machine Specification
 ```
